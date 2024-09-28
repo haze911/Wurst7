@@ -197,7 +197,7 @@ public class ForceOpDialog extends JDialog
 			+ "50ms: Fastest, doesn't bypass AntiSpam plugins<br>"
 			+ "1000ms: Recommended, bypasses most AntiSpam plugins<br>"
 			+ "10000ms: Slowest, bypasses all AntiSpam plugins" + "</html>");
-		spDelay.setModel(new SpinnerNumberModel(1000, 50, 10000, 50));
+		spDelay.setModel(new SpinnerNumberModel(1000, 1, 10000, 1));
 		spDelay.setLocation(lDelay1.getX() + lDelay1.getWidth() + 4, 84);
 		spDelay.setSize(60, (int)spDelay.getPreferredSize().getHeight());
 		spDelay.addChangeListener(e -> updateTimeLabel());
